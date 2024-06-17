@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>Tag-Tech</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./index.js">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="./assets/src/Blue Modern Technology & Gaming Logo (3).png" type="image/png">
+
+<style>
+body {
+    overflow-x: hidden;
+    
+}
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+@media only screen and (max-width: 959px) {
+    p {
+        font-size: 10px;
+    }
+  }
+
+</style>
+</head>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+    <!-- Avatar image in top left corner -->
+  <img src="./assets/src/Blue_Modern_Technology___Gaming_Logo__4_-removebg-preview.png" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>SOBRE</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>Imagens</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-address-book" style="font-size:48px; color:rgb(255, 255, 255);"></i>
+    <p>CONTATO</p>
+  </a>
+  <a href="./blog.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black"
+  target="_blank"
+  title="Ir ao BLOG"
+  >
+  <svg style="width: 50px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+    <path d="M192 32c0 17.7 14.3 32 32 32c123.7 0 224 100.3 224 224c0 17.7 14.3 32 32 32s32-14.3 32-32C512 128.9 383.1 0 224 0c-17.7 0-32 14.3-32 32zm0 96c0 17.7 14.3 32 32 32c70.7 0 128 57.3 128 128c0 17.7 14.3 32 32 32s32-14.3 32-32c0-106-86-192-192-192c-17.7 0-32 14.3-32 32zM96 144c0-26.5-21.5-48-48-48S0 117.5 0 144V368c0 79.5 64.5 144 144 144s144-64.5 144-144s-64.5-144-144-144H128v96h16c26.5 0 48 21.5 48 48s-21.5 48-48 48s-48-21.5-48-48V144z" fill="white" />
+  </svg>
+    <p>BLOG</p>
+  </a>
+
+  <a href="https://wa.me/qr/RQTZ2BHGEW64A1" target="_blank" title="Ir ao Watssap" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-whatsapp" style="font-size:48px;color:rgb(255, 255, 255)"></i>
+    <p>Watssap</p>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar" style="justify-content: center; display: flex; transform: translateX(-7%);">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="./blog.html" class="w3-bar-item w3-button" style="width:25% !important; transform: translateX(15%);">BLOG</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:20% !important">SOBRE</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important; transform: translateX(8%);" >CONTATO</a>
+    <a href="#" class="w3-bar-item w3-button" style="width:20% !important; transform: translateY(-99%);">HOME</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <img src="./assets/src/waen_smith__1_-removebg-preview.png" alt="boy" class="w3-image" width="992" height="1108" >
+  </header>
+
+  <!-- About Section -->
+  <div style="transform: translateY(-5%);" class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <hr style="width:200px" class="w3-opacity">
+    <p>A TAG-TECH Tecnologia é uma empresa especializada em desenvolvimento de sistemas customizados e consultoria para implantação e suporte de softwares de gestão.<br>
+        Atendendo principalmente pequenas e médias empresas, a TAG-TECH oferece soluções práticas e integradas para auxiliar na gestão empresarial.<br>
+        Seus serviços incluem o desenvolvimento de sistemas personalizados e consultoria para otimizar processos internos e proteger dados.
+        Empresa conta com uma equipe de alto nível profissional e ético, sempre à frente com soluções imediatas.<br> TAG TECH é uma Agência Digital focada no desenvolvimento de websites, sistemas web e consultoria.
+    </p>
+    <h3 class="w3-padding-16 w3-text-light-grey">Minhas Habilidades</h3>
+    <p class="w3-wide">HTML 5</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:55%"></div>
+    </div>
+    <p class="w3-wide">CSS 3</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:45%"></div>
+    </div>
+    <p class="w3-wide">Javascript</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:59%"></div>
+    </div><br>
+    <p class="w3-wide">React - React-native</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:55%"></div>
+    </div>
+    <p class="w3-wide">BootStrap</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:45%"></div>
+    </div>
+    <p class="w3-wide">Type-script </p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:59%"></div>
+    </div><br>
+
+    <h3 class="w3-padding-16 w3-text-light-grey">Banco de dados </h3>
+    <p class="w3-wide">SQL</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:55%"></div>
+    </div>
+    <p class="w3-wide">Mongo DB</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:45%"></div>
+    </div>
+    <p class="w3-wide">Postgre</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:59%"></div>
+    </div><br>
+    
+    
+    
+    <div style="border-radius: 15px;" class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">20+</span><br>
+        Certificaçôes 
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">15+</span><br>
+        Projetos
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">15+</span><br>
+        Cliente Felizes
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">30+</span><br>
+        Reuniões
+      </div>
+    </div>
+
+    <button style="border-radius: 15px;" class="w3-button w3-light-grey w3-padding-large w3-section">
+      <a href="./assets/src/Leandro.pdf" download style="text-decoration: none;color: blue;">
+          <i class="fa fa-download"></i> Baixar Currículo
+          <title>Baixar</title>
+          
+      </a>
+  </button>
+    
+    <!-- Grid for pricing tables -->
+    <h3 class="w3-padding-16 w3-text-light-grey">Meus Projetos</h3>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Automação em Python</li>
+          <li class="w3-padding-16">Projeto desenvolvido para automatizar processo cadastro de produtos</li>
+            <img style="width: 58%;" src="https://th.bing.com/th?id=OIP.nUYOwBlsmc2xTLmGRzBTCQHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Logo Python">
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <a href="https://github.com/lean123456lean/automacao-python" class="w3-button w3-white w3-padding-large w3-hover-black" style="border-radius: 22px; border: 1px solid rgb(0, 255, 179);">Github</a>
+
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-half">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">RB multi Jardins</li>
+          <li class="w3-padding-16">Empresa no ramo de jardinagem, landing Page 
+            Criando novas metas e oportunidades com uma identidade que faltava para competir no mesmo patamar 
+            que muitas outras da nossa região.
+          </li>
+          <a href="https://www.multijardins.com" target="_blank" class="w3-padding-16" style="text-decoration: none; color: blue;">https://multijardins.com/
+          <br>
+          <br>
+          </a>
+          <img src="./assets/src/logo.jpg" alt="">
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black" style="border-radius: 22px; border: 1px solid rgb(0, 255, 179);">Github</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-half" style="transform: translateY(3%);">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Projeto money</li>
+          <li class="w3-padding-16">Projeto criado para controle de despesas
+            usando React / React-native contando com duas versôes tanto par desktop e também um versão android.
+            <br>
+            
+          </li>
+          <li class="w3-padding-16">
+            <img style="width: 45%;" src="./assets/src/money.react.png" alt="Logo projete Money">
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button style="border-radius: 22px; border: 1px solid rgb(0, 255, 179);" class="w3-button w3-white w3-padding-large w3-hover-black">Gtihub</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-half" style="transform: translateY(5%);">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Api Pagamento (node.js)</li>
+          <li class="w3-padding-16">Api do zero em node.js Aguardando para lançamento
+            será usada por uma pagina de E-comerce Padaria Nutry e Vida.
+            
+            Previão de lançamento 15/11/2024
+            
+          </li>
+          <li class="w3-padding-16">
+
+            <img src="https://th.bing.com/th/id/OIP.COvz0L3FUapYYbsQHHZ90gHaFj?w=238&h=180&c=7&r=0&o=5&pid=1.7" alt="Linguagem node.js">
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <a href="https://github.com/lean123456lean/api-pagamentos" class="w3-button w3-white w3-padding-large w3-hover-black" style="border-radius: 22px; border: 1px solid rgb(0, 255, 179);">Github</a>
+
+          </li>
+        </ul>
+      </div>
+    <!-- End Grid/Pricing tables -->
+    </div>
+  <!-- End About Section -->
+  </div>
+  
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">Imagens de Trabalhos Realizados:</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="./assets/src/API pagamento.png" style="width:100%">
+        <img src="./assets/src/Carrossel.png" style="width:100%;">
+        <img src="./assets/src/conceito cozinha.png" style="width: 100%">
+        <img src="./assets/src/paralax.png" style="width:100%">
+        <img src="./assets/src/gta.png" style="width:100%">
+        <img src="./assets/src/tag-tech.png" style="width:100%">
+        <img src="./assets/src/lan.png" style="width:100%">
+      </div>
+
+      <div class="w3-half">
+        <img src="" style="width:100%">
+        <img src="./assets/src/E-comerce.png" style="width:100%">
+        <img src="./assets/src/money.react.png" style="width:100%">
+        <img src="./assets/src/Tela de login.png" style="width:100%">
+        <img src="./assets/src/Captura de tela 2024-06-11 102421.png" style="width: 100%">
+        <img src="./assets/src/BLOG.png" style="width: 100%">
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+    
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contato</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <a href="https://latitude.to/map/br/brazil/cities/brasilia#google_vignette" target="_blank" title="Localização"><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> BRASÍLIA DF</a><br>
+      <br>
+      <a href="tel:+5561992784849" target="_blank" title="Ligar para Tag-Tech"><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Celular: 61 99278-4849</a><br>
+      <br>
+      <a href="mailto:atendimentotagtech@gmail.com" target="_blank" title="Ir ao E-mail"><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Email: atendimentotagtech@gmail.com</a>
+      <br>
+      
+    </div><br>
+    <p>Vamos entrar em contato. Envie-me uma mensagem:</p>
+    <form action="https://formsubmit.co/atendimentotagtech@gmail.com" method="POST" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Nome" required name="Name" style="border-radius: 15px; border: 1px solid rgb(0, 255, 179);"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email" style="border-radius: 15px; border: 1px solid rgb(0, 255, 179);"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Assunto" required name="Subject" style="border-radius: 15px; border: 1px solid rgb(0, 255, 179);"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Menssagem" required name="Message" style="border-radius: 15px; border: 1px solid rgb(0, 255, 179);"></p>
+      <p>
+        <button style="border-radius: 10px; border: 2px solid rgb(0, 255, 115);" class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i><a href="javascript:history.back()"></a>
+          Enviar Menssagem 
+          
+        </button>
+      </p>
+  </div>
+    </form>
+    <!-- End Contact Section -->
+    
+  
+    <!-- Footer -->
+    <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+      <a href="https://www.facebook.com/profile.php?id=100012747635933" target="_blank" title="Ir ao facebook"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+      <a href="https://github.com/lean123456lean" target="_blank" title="Ir ao Github"><i class="fa fa-github w3-hover-opacity" style="font-size:25px;color:rgb(133, 128, 128)"></i></a>
+      <a href="https://www.instagram.com/1salepimenta/" target="_blank" title="Ir ao Instagram"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+      <a href="https://www.linkedin.com/in/leandro-martins-40bb352b3/" target="_blank" title="Ir ao linkedin"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+      <p class="w3-medium">Desenvolvido por:</p>
+      <img style="width: 30%;" src="./assets/src/footer.png" alt="">
+
+      <div id="footer_copyright" style="display: flex; justify-content: center;padding: 45px; font-size: 0.7rem;">
+        &#169
+        2024 Todos os direitos reservados Tag-Tech
+    </div>
+    </footer>
+  <!-- End footer -->
+
+<!-- END PAGE CONTENT -->
+</div>
+<script>
+  document.querySelector('form').addEventListener('submit', function () {
+      // Limpa os campos do formulário
+      document.querySelector('[name="Name"]').value = '';
+      document.querySelector('[name="Email"]').value = '';
+      document.querySelector('[name="Subject"]').value = '';
+      document.querySelector('[name="Message"]').value = '';
+  });
+</script>
+</body>
+</html>
