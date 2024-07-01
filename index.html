@@ -16,11 +16,13 @@
 body {
     overflow-x: hidden;
     
+    
 }
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 .w3-row-padding img {margin-bottom: 12px}
 /* Set the width of the sidebar to 120px */
 .w3-sidebar {width: 120px;background: #222;}
+
 /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
 #main {margin-left: 120px}
 /* Remove margins from "page content" on small screens */
@@ -32,15 +34,91 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     }
   }
 
+
+.video-background {
+
+
+  margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    opacity: 35%;
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+
+@media (max-width: 600px) {
+            .w3-content {
+                padding: 16px;
+            }
+            .responsive-text {
+                font-size: 0.8rem;
+            }
+        }
+
+        @media (min-width: 601px) and (max-width: 1024px) {
+            .w3-content {
+                padding: 32px;
+            }
+            .responsive-text {
+                font-size: 1.0rem;
+            }
+        }
+
+        @media (min-width: 1025px) {
+            .w3-content {
+                padding: 64px;
+            }
+            .responsive-text {
+                font-size: 1.2rem;
+            }
+        }
 </style>
 </head>
 <body class="w3-black">
 
+  <div class="video-background">
+    <video autoplay muted loop id="background-video">
+        <source src="./assets/src/mixkit-flying-into-a-black-hole-in-the-starry-universe-31549-hd-ready.mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center" style="opacity: 55%;">
     <!-- Avatar image in top left corner -->
-  <img src="./assets/src/Blue_Modern_Technology___Gaming_Logo__4_-removebg-preview.png" style="width:100%">
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+  <img src="./assets/src/Blue_Modern_Technology___Gaming_Logo__4_-removebg-preview.png" style="width:100%; margin-top: 10px; padding: 10px;">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-home w3-xxlarge"></i>
     <p>HOME</p>
   </a>
@@ -50,7 +128,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   </a>
   <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-eye w3-xxlarge"></i>
-    <p>Imagens</p>
+    <p>IMAGENS</p>
   </a>
   <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-address-book" style="font-size:48px; color:rgb(255, 255, 255);"></i>
@@ -84,18 +162,20 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <!-- Page Content -->
 <div class="w3-padding-large" id="main">
   <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <img src="./assets/src/waen_smith__1_-removebg-preview.png" alt="boy" class="w3-image" width="992" height="1108" >
+  <header class="w3-container w3-padding-32 w3-center" id="home">
+    <img style="margin-top: -90px;" src="./assets/src/waen_smith__1_-removebg-preview.png" alt="boy" class="w3-image" width="992" height="1108">
+    
   </header>
 
   <!-- About Section -->
   <div style="transform: translateY(-5%);" class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
     <hr style="width:200px" class="w3-opacity">
-    <p>A TAG-TECH Tecnologia é uma empresa especializada em desenvolvimento de sistemas customizados e consultoria para implantação e suporte de softwares de gestão.<br>
+    <p style="font-size: 1.0rem;">A TAG-TECH Tecnologia é uma empresa especializada em desenvolvimento de sistemas customizados e consultoria para implantação e suporte de softwares de gestão.<br>
         Atendendo principalmente pequenas e médias empresas, a TAG-TECH oferece soluções práticas e integradas para auxiliar na gestão empresarial.<br>
         Seus serviços incluem o desenvolvimento de sistemas personalizados e consultoria para otimizar processos internos e proteger dados.
         Empresa conta com uma equipe de alto nível profissional e ético, sempre à frente com soluções imediatas.<br> TAG TECH é uma Agência Digital focada no desenvolvimento de websites, sistemas web e consultoria.
     </p>
+    
     <h3 class="w3-padding-16 w3-text-light-grey">Minhas Habilidades</h3>
     <p class="w3-wide">HTML 5</p>
     <div class="w3-white">

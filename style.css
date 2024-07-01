@@ -1,0 +1,108 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.comentario {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    transform: translateY(-30px);
+    
+    
+}
+.comment-section {
+    width: 100%;
+    max-width: 900px;
+    padding: 20px;
+    background-image: url(./assets/src/Wave.svg);
+    opacity: 85%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.comment {
+    background-color: #d9dedf;
+    padding: 5px;
+    border: 1px solid #00ff80;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+.comment-author {
+    font-weight: initial;
+    margin-bottom: 5px;
+}
+.comments-list {
+    font-size: 0.8rem;
+    font-weight: 350;
+    border: #04d4f0;
+    border-radius: 22px;
+    background: none;
+}
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.comment-form input, .comment-form textarea, .comment-form button {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #00ff80;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 250;
+}
+.comment-form textarea {
+    height: 100px;
+    resize: vertical;
+}
+.comment-form button {
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+.comment-form button:hover {
+    background-color: #0056b3;
+}
+.h3 {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 250;
+    color: #ffffff;
+}
+@media (min-width: 600px) {
+    .comment-form, .comments-list {
+        padding: 0;
+    }
+}
+@media (min-width: 768px) {
+    .comment-form input, .comment-form textarea {
+        padding: 15px;
+    }
+    .comment-form button {
+        padding: 15px;
+    }
+}
+@media (min-width: 992px) {
+    .article {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+}
+.show-more-button {
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.show-more-button:hover {
+    background-color: #0056b3;
+}
